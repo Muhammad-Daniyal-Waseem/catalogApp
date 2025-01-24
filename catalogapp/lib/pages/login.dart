@@ -10,6 +10,7 @@ class Login extends StatefulWidget {
 
 class _LoginState extends State<Login> {
   String name = "";
+  bool changeBtn = false;
   @override
   Widget build(BuildContext context) {
     return Material(
@@ -26,15 +27,17 @@ class _LoginState extends State<Login> {
                 fit: BoxFit.cover,
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
-            Text("Welcome $name",
-                style: TextStyle(
-                  fontSize: 30,
-                  fontWeight: FontWeight.bold,
-                )),
-            SizedBox(
+            Text(
+              "Welcome $name",
+              style: const TextStyle(
+                fontSize: 30,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            const SizedBox(
               height: 50,
             ),
             Padding(
@@ -43,8 +46,10 @@ class _LoginState extends State<Login> {
               child: Column(
                 children: [
                   TextFormField(
-                    decoration: InputDecoration(
-                        hintText: "Enter username", labelText: "Username"),
+                    decoration: const InputDecoration(
+                      hintText: "Enter username",
+                      labelText: "Username",
+                    ),
                     onChanged: (value) {
                       name = value;
                       setState(() {});
@@ -52,27 +57,42 @@ class _LoginState extends State<Login> {
                   ),
                   TextFormField(
                     obscureText: true,
-                    decoration: InputDecoration(
-                        hintText: "Enter password", labelText: "Password"),
+                    decoration: const InputDecoration(
+                      hintText: "Enter password",
+                      labelText: "Password",
+                    ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 50,
                   ),
-                  ElevatedButton(
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.blue,
-                      padding: const EdgeInsets.symmetric(
-                        horizontal: 40,
-                        vertical: 12,
-                      ),
-                    ),
-                    child: const Text(
-                      "Sign in",
-                      style: TextStyle(color: Colors.white, fontSize: 15),
-                    ),
-                    onPressed: () {
+                  InkWell(
+                    onTap: () async {
+                      setState(() {
+                        changeBtn = true;
+                      });
+                      await Future.delayed(Duration(seconds: 1));
                       Navigator.pushNamed(context, Routes.homeRoute);
                     },
+                    child: AnimatedContainer(
+                      duration: Duration(seconds: 1),
+                      width: changeBtn ? 50 : 150,
+                      height: 50,
+                      alignment: Alignment.center,
+                      decoration: BoxDecoration(
+                        color: Colors.deepPurple,
+                        borderRadius: BorderRadius.circular(changeBtn ? 50 : 8),
+                      ),
+                      child: changeBtn
+                          ? Icon(Icons.done, color: Colors.white)
+                          : Text(
+                              "Login",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold,
+                                fontSize: 18,
+                              ),
+                            ),
+                    ),
                   ),
                 ],
               ),
