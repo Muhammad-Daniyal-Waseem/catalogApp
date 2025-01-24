@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           fontFamily: GoogleFonts.lato().fontFamily,
         ),
-        initialRoute: Routes.loginRoute,
+        initialRoute: Routes.homeRoute,
         routes: {
           Routes.homeRoute: (context) => Home(),
           Routes.loginRoute: (context) => Login(),

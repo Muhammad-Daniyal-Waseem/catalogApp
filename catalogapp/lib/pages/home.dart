@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:catalogapp/widgets/MyDrawer.dart'; // Ensure this contains `homeRoute`
 
 class Home extends StatelessWidget {
   const Home({super.key});
@@ -14,7 +15,7 @@ class Home extends StatelessWidget {
       body: Center(
         child: Text("Hello Daniyal Waseem,"),
       ),
-      drawer: Drawer(),
+      drawer: MyDrawer(),
     );
   }
 }
