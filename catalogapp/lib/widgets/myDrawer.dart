@@ -23,7 +23,7 @@ class MyDrawer extends StatelessWidget {
                     currentAccountPicture: Padding(
                       padding: const EdgeInsets.only(bottom: 8.0),
                       child: CircleAvatar(
-                        backgroundImage: AssetImage("assets/images/person.jpg"),
+                        backgroundImage: AssetImage("assets/images/my.png"),
                       ),
                     ),
                     accountName: Text("Daniyal Waseem"),
