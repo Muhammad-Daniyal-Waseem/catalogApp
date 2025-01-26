@@ -1,10 +1,14 @@
+import 'package:catalogapp/components/home/catlogList.dart';
+import 'package:catalogapp/components/home/header.dart';
 import 'package:catalogapp/models/catalog.dart';
-import 'package:catalogapp/widgets/itemsWidget.dart';
+// import 'package:catalogapp/widgets/itemsWidget.dart';
+import 'package:catalogapp/widgets/themes.dart';
 import 'package:flutter/material.dart';
-import 'package:catalogapp/widgets/MyDrawer.dart';
+// import 'package:catalogapp/widgets/MyDrawer.dart';
 import 'package:flutter/services.dart'; // For rootBundle
 import 'dart:convert'; // For jsonDecode
 import 'dart:async'; // For Timer
+import 'package:velocity_x/velocity_x.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -24,8 +28,7 @@ class _HomeState extends State<Home> {
     super.initState();
     loadData();
 
-    // Set a 25-second timer to show a timeout message if data is not loaded
-    timer = Timer(Duration(seconds: 5), () {
+    timer = Timer(const Duration(seconds: 20), () {
       if (!dataLoaded) {
         setState(() {
           timeoutReached = true;
@@ -36,14 +39,13 @@ class _HomeState extends State<Home> {
 
   @override
   void dispose() {
-    timer.cancel(); // Cancel the timer when the widget is disposed
+    timer.cancel();
     super.dispose();
   }
 
-  // Load data from the JSON file
   void loadData() async {
     try {
-      await Future.delayed(Duration(seconds: 2));
+      await Future.delayed(const Duration(seconds: 2));
       final catalogJson = await rootBundle.loadString("assets/catalog.json");
       final decodedData = jsonDecode(catalogJson);
       var productData = decodedData["products"];
@@ -55,7 +57,6 @@ class _HomeState extends State<Home> {
         dataLoaded = true;
       });
     } catch (e) {
-      print("Error loading data: $e");
       setState(() {
         timeoutReached = true;
       });
@@ -65,31 +66,34 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
-      appBar: AppBar(
-        title: Text("Catalog App", style: TextStyle(color: Colors.black)),
-        iconTheme: IconThemeData(color: Colors.black),
-        centerTitle: true,
+      backgroundColor: Themes.creamcolor,
+      body: SafeArea(
+        child: Container(
+          padding: Vx.m32,
+          child: Column(
+            children: [
+              if (timeoutReached)
+                Column(
+                  children: [
+                    Icon(Icons.error_outline, color: Colors.red, size: 64),
+                    "Page not found!".text.red500.xl2.makeCentered(),
+                  ],
+                ).centered()
+              else if (dataLoaded) ...[
+                const CatalogHeader(),
+                Expanded(child: CatalogList(items: items)),
+              ] else
+                CircularProgressIndicator()
+                    .centered()
+                    .box
+                    .rounded
+                    .color(Themes.darkBlueColor)
+                    .p16
+                    .makeCentered(),
+            ],
+          ),
+        ),
       ),
-      body: Padding(
-        padding: const EdgeInsets.all(16.0),
-        child: timeoutReached
-            ? Center(
-                child: Text(
-                  "No Product",
-                  style: TextStyle(fontSize: 20, color: Colors.red),
-                ),
-              )
-            : items.isEmpty
-                ? Center(child: CircularProgressIndicator())
-                : ListView.builder(
-                    itemCount: items.length,
-                    itemBuilder: (context, index) => Itemswidget(
-                      item: items[index],
-                    ),
-                  ),
-      ),
-      drawer: MyDrawer(),
     );
   }
 }

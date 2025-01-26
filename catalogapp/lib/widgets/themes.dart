@@ -18,7 +18,7 @@ class Themes {
 
   static ThemeData darkTheme(BuildContext context) => ThemeData(
         brightness: Brightness.dark,
-        fontFamily: GoogleFonts.lato().fontFamily,
+        fontFamily: GoogleFonts.poppins().fontFamily,
         appBarTheme: AppBarTheme(
           color: Colors.black,
           elevation: 0.0,
@@ -28,4 +28,7 @@ class Themes {
               bodyMedium: GoogleFonts.lato(),
             ),
       );
+
+  static Color creamcolor = Color(0xfff5f5f5);
+  static Color darkBlueColor = Color(0xff403b58);
 }
