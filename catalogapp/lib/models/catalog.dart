@@ -1,13 +1,15 @@
 class CatalogModel {
   static final items = [
     Item(
-        id: 1,
-        name: "iphone 12 Pro",
-        desc: "Apple iphone 12th generation",
-        price: 999,
-        color: "#33505a",
-        image:
-            "https://wallpapers.com/images/high/work-laptop-and-camera-qybkwkchtbm83bql.webp"),
+      id: 1,
+      name: "iphone 12 Pro",
+      desc: "Apple iphone 12th generation",
+      price: 999,
+      color: "#33505a",
+      image:
+          "https://wallpapers.com/images/high/work-laptop-and-camera-qybkwkchtbm83bql.webp",
+      detail: "detail",
+    )
   ];
 }
 
@@ -18,6 +20,7 @@ class Item {
   final num price;
   final String color;
   final String image;
+  final String detail;
 
   Item({
     required this.id,
@@ -26,6 +29,7 @@ class Item {
     required this.price,
     required this.color,
     required this.image,
+    required this.detail,
   });
 
   factory Item.fromMap(Map<String, dynamic> map) {
@@ -36,6 +40,7 @@ class Item {
       price: map["price"],
       color: map["color"],
       image: map["image"],
+      detail: map["detail"],
     );
   }
 
@@ -46,5 +51,6 @@ class Item {
         "price": price,
         "color": color,
         "image": image,
+        "detail": detail,
       };
 }

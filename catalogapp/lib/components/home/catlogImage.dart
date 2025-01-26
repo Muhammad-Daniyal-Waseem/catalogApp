@@ -15,7 +15,7 @@ class CatalogImage extends StatelessWidget {
         width: 100,
         height: 100,
         fit: BoxFit.cover,
-      ).box.color(Themes.creamcolor).rounded.p8.make(),
+      ).box.color(Themes.creamcolor).rounded.make(),
     );
   }
 }

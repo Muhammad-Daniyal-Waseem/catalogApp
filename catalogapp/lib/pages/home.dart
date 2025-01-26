@@ -1,15 +1,18 @@
+// Imports
 import 'package:catalogapp/components/home/catlogList.dart';
 import 'package:catalogapp/components/home/header.dart';
 import 'package:catalogapp/models/catalog.dart';
-// import 'package:catalogapp/widgets/itemsWidget.dart';
+import 'package:catalogapp/routes.dart';
+import 'package:catalogapp/widgets/myDrawer.dart';
 import 'package:catalogapp/widgets/themes.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-// import 'package:catalogapp/widgets/MyDrawer.dart';
-import 'package:flutter/services.dart'; // For rootBundle
-import 'dart:convert'; // For jsonDecode
-import 'dart:async'; // For Timer
+import 'package:flutter/services.dart';
+import 'dart:convert';
+import 'dart:async';
 import 'package:velocity_x/velocity_x.dart';
 
+// Home Screen
 class Home extends StatefulWidget {
   const Home({super.key});
 
@@ -66,10 +69,55 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Themes.creamcolor,
+      appBar: PreferredSize(
+        preferredSize: const Size.fromHeight(kToolbarHeight),
+        child: AppBar(
+          automaticallyImplyLeading: false,
+          flexibleSpace: Container(
+            decoration: BoxDecoration(
+              gradient: LinearGradient(
+                colors: [Vx.white],
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
+              ),
+            ),
+          ),
+          elevation: 2,
+          leading: Builder(
+            builder: (BuildContext context) {
+              return IconButton(
+                icon: Icon(Icons.menu, color: Colors.white),
+                onPressed: () {
+                  Scaffold.of(context).openDrawer();
+                },
+              );
+            },
+          ),
+          actions: [
+            IconButton(
+              icon: Icon(CupertinoIcons.cart, color: Colors.white),
+              onPressed: () {
+                Navigator.pushNamed(context, Routes.cartRoute);
+              },
+            ),
+          ],
+          backgroundColor: Colors.transparent,
+        ),
+      ),
+      drawer: const MyDrawer(),
       body: SafeArea(
         child: Container(
-          padding: Vx.m32,
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+              colors: [
+                Themes.creamcolor,
+                Themes.darkBlueColor.withOpacity(0.1),
+              ],
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
+            ),
+          ),
+          padding: Vx.m16,
           child: Column(
             children: [
               if (timeoutReached)
@@ -83,13 +131,19 @@ class _HomeState extends State<Home> {
                 const CatalogHeader(),
                 Expanded(child: CatalogList(items: items)),
               ] else
-                CircularProgressIndicator()
-                    .centered()
-                    .box
-                    .rounded
-                    .color(Themes.darkBlueColor)
-                    .p16
-                    .makeCentered(),
+                Expanded(
+                  child: Center(
+                    child: CircularProgressIndicator(
+                      color: Themes.darkBlueColor,
+                    )
+                        .centered()
+                        .box
+                        .rounded
+                        .p16
+                        .color(Colors.blue.withOpacity(0.1))
+                        .makeCentered(),
+                  ),
+                ),
             ],
           ),
         ),

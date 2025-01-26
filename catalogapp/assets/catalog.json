@@ -6,7 +6,8 @@
       "desc": "Latest 5G smartphone with AMOLED display and fast charging.",
       "price": 799.99,
       "color": "Black",
-      "image": "https://wallpapers.com/images/high/work-laptop-and-camera-qybkwkchtbm83bql.webp"
+      "image": "https://wallpapers.com/images/high/work-laptop-and-camera-qybkwkchtbm83bql.webp",
+      "detail": "This smartphone features a 6.5-inch AMOLED display, a 5000mAh battery, and supports 5G connectivity for super-fast internet speeds. Perfect for gaming, streaming, and productivity."
     },
     {
       "id": 2,
@@ -14,7 +15,8 @@
       "desc": "Premium smartphone with a stunning camera and sleek design.",
       "price": 899.99,
       "color": "Blue",
-      "image": "https://wallpapers.com/images/high/work-laptop-and-camera-qybkwkchtbm83bql.webp"
+      "image": "https://wallpapers.com/images/high/work-laptop-and-camera-qybkwkchtbm83bql.webp",
+      "detail": "The Smartphone B is equipped with a 48MP camera and a sleek design that fits comfortably in your hand. It also boasts a long-lasting battery and fast charging capabilities."
     },
     {
       "id": 3,
@@ -22,7 +24,8 @@
       "desc": "Affordable smartphone with excellent performance.",
       "price": 599.99,
       "color": "Red",
-      "image": "https://wallpapers.com/images/high/work-laptop-and-camera-qybkwkchtbm83bql.webp"
+      "image": "https://wallpapers.com/images/high/work-laptop-and-camera-qybkwkchtbm83bql.webp",
+      "detail": "Smartphone D offers great performance with a smooth user experience, featuring a 6.4-inch screen and a reliable camera. It's a budget-friendly option without compromising quality."
     },
     {
       "id": 4,
@@ -30,7 +33,8 @@
       "desc": "Compact smartphone with advanced features.",
       "price": 699.99,
       "color": "White",
-      "image": "https://wallpapers.com/images/high/work-laptop-and-camera-qybkwkchtbm83bql.webp"
+      "image": "https://wallpapers.com/images/high/work-laptop-and-camera-qybkwkchtbm83bql.webp",
+      "detail": "This compact smartphone packs advanced features like facial recognition, a 12MP camera, and a 6.2-inch display, making it a perfect choice for those seeking portability."
     },
     {
       "id": 5,
@@ -38,7 +42,8 @@
       "desc": "Flagship smartphone with high-end specs and a powerful battery.",
       "price": 1099.99,
       "color": "Gray",
-      "image": "https://wallpapers.com/images/high/work-laptop-and-camera-qybkwkchtbm83bql.webp"
+      "image": "https://wallpapers.com/images/high/work-laptop-and-camera-qybkwkchtbm83bql.webp",
+      "detail": "Smartphone E comes with top-of-the-line specs, including a Snapdragon 888 processor, 12GB of RAM, and a 6000mAh battery, ensuring performance and endurance."
     },
     {
       "id": 6,
@@ -46,7 +51,8 @@
       "desc": "Lightweight laptop with high performance and long battery life.",
       "price": 1299.99,
       "color": "Silver",
-      "image": "https://wallpapers.com/images/high/work-laptop-and-camera-qybkwkchtbm83bql.webp"
+      "image": "https://wallpapers.com/images/high/work-laptop-and-camera-qybkwkchtbm83bql.webp",
+      "detail": "Laptop A offers a sleek design and is equipped with an Intel i7 processor, 16GB of RAM, and a 512GB SSD, making it ideal for professionals and students."
     },
     {
       "id": 7,
@@ -54,7 +60,8 @@
       "desc": "Powerful gaming laptop with a sleek design.",
       "price": 1499.99,
       "color": "Black",
-      "image": "https://wallpapers.com/images/high/work-laptop-and-camera-qybkwkchtbm83bql.webp"
+      "image": "https://wallpapers.com/images/high/work-laptop-and-camera-qybkwkchtbm83bql.webp",
+      "detail": "Laptop B is powered by an RTX 3060 graphics card and a 15.6-inch 144Hz display, providing an immersive gaming experience with high frame rates and vivid graphics."
     },
     {
       "id": 8,
@@ -62,7 +69,8 @@
       "desc": "Budget-friendly laptop with essential features for daily use.",
       "price": 799.99,
       "color": "Blue",
-      "image": "https://wallpapers.com/images/high/work-laptop-and-camera-qybkwkchtbm83bql.webp"
+      "image": "https://wallpapers.com/images/high/work-laptop-and-camera-qybkwkchtbm83bql.webp",
+      "detail": "Laptop C provides all the essential features you need for everyday tasks, such as browsing, word processing, and video conferencing, all at an affordable price."
     },
     {
       "id": 9,
@@ -70,7 +78,8 @@
       "desc": "Professional laptop with a vibrant display and fast processor.",
       "price": 1799.99,
       "color": "Gray",
-      "image": "https://wallpapers.com/images/high/work-laptop-and-camera-qybkwkchtbm83bql.webp"
+      "image": "https://wallpapers.com/images/high/work-laptop-and-camera-qybkwkchtbm83bql.webp",
+      "detail": "Laptop D boasts a 4K display, an Intel i9 processor, and 32GB of RAM, offering an exceptional experience for content creators, designers, and professionals."
     },
     {
       "id": 10,
@@ -78,7 +87,8 @@
       "desc": "Creative laptop optimized for designers and content creators.",
       "price": 1999.99,
       "color": "White",
-      "image": "https://wallpapers.com/images/high/work-laptop-and-camera-qybkwkchtbm83bql.webp"
+      "image": "https://wallpapers.com/images/high/work-laptop-and-camera-qybkwkchtbm83bql.webp",
+      "detail": "Laptop E features a color-accurate display, a powerful processor, and ample storage, making it perfect for creative professionals in graphic design, video editing, and 3D modeling."
     },
     {
       "id": 11,
@@ -86,7 +96,8 @@
       "desc": "Portable speaker with powerful bass and water resistance.",
       "price": 89.99,
       "color": "Green",
-      "image": "https://wallpapers.com/images/high/work-laptop-and-camera-qybkwkchtbm83bql.webp"
+      "image": "https://wallpapers.com/images/high/work-laptop-and-camera-qybkwkchtbm83bql.webp",
+      "detail": "Speaker A offers rich bass and loud volume in a portable form factor, making it perfect for outdoor activities. It's also waterproof, so you can take it to the beach or pool."
     },
     {
       "id": 12,
@@ -94,7 +105,8 @@
       "desc": "High-quality Bluetooth speaker with immersive sound.",
       "price": 129.99,
       "color": "Black",
-      "image": "https://wallpapers.com/images/high/work-laptop-and-camera-qybkwkchtbm83bql.webp"
+      "image": "https://wallpapers.com/images/high/work-laptop-and-camera-qybkwkchtbm83bql.webp",
+      "detail": "Speaker B provides deep bass and crystal-clear highs, ensuring an immersive audio experience for music lovers. It also features Bluetooth connectivity for easy pairing with devices."
     },
     {
       "id": 13,
@@ -102,7 +114,8 @@
       "desc": "Compact speaker with long battery life and durable build.",
       "price": 79.99,
       "color": "Blue",
-      "image": "https://wallpapers.com/images/high/work-laptop-and-camera-qybkwkchtbm83bql.webp"
+      "image": "https://wallpapers.com/images/high/work-laptop-and-camera-qybkwkchtbm83bql.webp",
+      "detail": "Speaker C offers long-lasting battery life and a rugged build, making it perfect for travel, hiking, or camping. Its compact size doesn't compromise on sound quality."
     },
     {
       "id": 14,
@@ -110,7 +123,8 @@
       "desc": "Multi-room speaker system with excellent connectivity.",
       "price": 149.99,
       "color": "White",
-      "image": "https://wallpapers.com/images/high/work-laptop-and-camera-qybkwkchtbm83bql.webp"
+      "image": "https://wallpapers.com/images/high/work-laptop-and-camera-qybkwkchtbm83bql.webp",
+      "detail": "Speaker D allows you to connect multiple speakers and create a multi-room audio system. Its seamless Bluetooth connectivity makes it easy to play music throughout your home."
     },
     {
       "id": 15,
@@ -118,7 +132,8 @@
       "desc": "Premium wireless speaker with crystal-clear audio.",
       "price": 199.99,
       "color": "Gray",
-      "image": "https://wallpapers.com/images/high/work-laptop-and-camera-qybkwkchtbm83bql.webp"
+      "image": "https://wallpapers.com/images/high/work-laptop-and-camera-qybkwkchtbm83bql.webp",
+      "detail": "Speaker E delivers premium sound quality with rich tones and deep bass. It offers wireless connectivity and is perfect for both indoor and outdoor listening."
     },
     {
       "id": 16,
@@ -126,7 +141,8 @@
       "desc": "Affordable phone with great build quality.",
       "price": 499.99,
       "color": "Black",
-      "image": "https://wallpapers.com/images/high/work-laptop-and-camera-qybkwkchtbm83bql.webp"
+      "image": "https://wallpapers.com/images/high/work-laptop-and-camera-qybkwkchtbm83bql.webp",
+      "detail": "Smartphone F offers excellent value with its sturdy build, decent camera, and long battery life. It's a great option for anyone on a budget who doesn't want to compromise on quality."
     },
     {
       "id": 17,
@@ -134,7 +150,8 @@
       "desc": "Ultra-fast phone with a powerful gaming processor.",
       "price": 899.99,
       "color": "Purple",
-      "image": "https://wallpapers.com/images/high/work-laptop-and-camera-qybkwkchtbm83bql.webp"
+      "image": "https://wallpapers.com/images/high/work-laptop-and-camera-qybkwkchtbm83bql.webp",
+      "detail": "Smartphone G is optimized for gaming, featuring a high-refresh-rate display and a powerful processor that ensures smooth gameplay even with graphically demanding games."
     },
     {
       "id": 18,
@@ -142,7 +159,8 @@
       "desc": "Business laptop with excellent keyboard and high storage.",
       "price": 1399.99,
       "color": "Gray",
-      "image": "https://wallpapers.com/images/high/work-laptop-and-camera-qybkwkchtbm83bql.webp"
+      "image": "https://wallpapers.com/images/high/work-laptop-and-camera-qybkwkchtbm83bql.webp",
+      "detail": "Laptop F is designed for professionals, featuring a responsive keyboard, a high-res display, and large storage capacity to handle business workloads."
     },
     {
       "id": 19,
@@ -150,7 +168,8 @@
       "desc": "Convertible 2-in-1 laptop for work and entertainment.",
       "price": 1599.99,
       "color": "Silver",
-      "image": "https://wallpapers.com/images/high/work-laptop-and-camera-qybkwkchtbm83bql.webp"
+      "image": "https://wallpapers.com/images/high/work-laptop-and-camera-qybkwkchtbm83bql.webp",
+      "detail": "Laptop G offers flexibility with its 2-in-1 design, allowing you to switch between laptop and tablet mode. It's perfect for work, entertainment, and creative projects."
     },
     {
       "id": 20,
@@ -158,7 +177,8 @@
       "desc": "Rugged Bluetooth speaker for outdoor adventures.",
       "price": 99.99,
       "color": "Orange",
-      "image": "https://wallpapers.com/images/high/work-laptop-and-camera-qybkwkchtbm83bql.webp"
+      "image": "https://wallpapers.com/images/high/work-laptop-and-camera-qybkwkchtbm83bql.webp",
+      "detail": "Speaker F is built to withstand the elements, with a durable design that can handle drops, rain, and dust. It's perfect for outdoor adventures and camping trips."
     },
     {
       "id": 21,
@@ -166,7 +186,8 @@
       "desc": "Premium speaker with smart assistant integration.",
       "price": 179.99,
       "color": "Black",
-      "image": "https://wallpapers.com/images/high/work-laptop-and-camera-qybkwkchtbm83bql.webp"
+      "image": "https://wallpapers.com/images/high/work-laptop-and-camera-qybkwkchtbm83bql.webp",
+      "detail": "Speaker G integrates seamlessly with smart assistants like Alexa and Google Assistant, allowing you to control your music and other smart devices with voice commands."
     }
   ]
 }

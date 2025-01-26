@@ -7,8 +7,7 @@ class Itemswidget extends StatelessWidget {
   const Itemswidget({
     Key? key, // Use nullable type for Key
     required this.item, // Mark this parameter as required
-  })  : assert(item != null),
-        super(key: key);
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
